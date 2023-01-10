@@ -1,0 +1,135 @@
+.nav {
+    overflow: hidden;
+    padding-bottom: 30%;
+    position: relative;
+    height: 0;
+    width: 80%;
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-start: span 2;
+    border-radius: 35px;
+    justify-content: center;
+    margin-top: 1%;
+
+
+
+
+}
+
+.nav iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.contenedor_usuario {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.form_contacto {
+    column-span: 2;
+    grid-column-start: 2;
+    grid-row-start: span 2;
+    border-left: 1px solid #ddd;
+    border-radius: 18px;
+
+}
+
+.informacion {
+    display: flex;
+    column-span: 2;
+}
+
+#form {
+    justify-content: center;
+    margin-left: 15px;
+    margin-top: 9px;
+    font-size: 20px;
+
+}
+
+input[type=texto2] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border-color: black;
+    color: rgb(114, 108, 108);
+}
+
+table {
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td {
+
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: rgb(80, 150, 255);
+}
+
+textarea:hover {
+    font-size: 20px;
+
+}
+
+
+
+@media (max-width: 600px) {
+    contenedor_usuario {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .form_contacto {
+        grid-column-start: 1;
+        width: auto;
+    }
+
+    .contenedor_usuario {
+        width: auto;
+        height: auto;
+        display: block;
+
+    }
+}

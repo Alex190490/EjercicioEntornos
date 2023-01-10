@@ -1,0 +1,124 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contenedor_principal {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    padding: 30px;
+    grid-gap: 50px;
+
+
+}
+
+img.imagen {
+    border-radius: 30px;
+}
+
+.contenedor_hijo {
+
+    padding: 5px;
+
+    text-align: center;
+    position: relative;
+
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.titulo_imagen {
+    position: absolute;
+    /*se muestra por encima*/
+    bottom: 0;
+    color: white;
+    width: 100%;
+}
+
+.contenedor_hijo:nth-child(1) {
+    /*:nth-child lo que hace es que selecciona una imagen hijo del contenedor padre fotos*/
+    grid-column-start: span 3;
+    grid-row-start: span 3;
+
+}
+
+.contenedor_hijo:nth-child(2) {
+    /*:nth-child lo que hace es que selecciona una imagen hijo del contenedor padre fotos*/
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+
+}
+
+.contenedor_hijo:nth-child(4) {
+    /*:nth-child lo que hace es que selecciona una imagen hijo del contenedor padre fotos*/
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+
+}
+
+.contenedor_hijo:nth-child(3) {
+    /*:nth-child lo que hace es que selecciona una imagen hijo del contenedor padre fotos*/
+    grid-column-start: span 3;
+    grid-row-start: span 2;
+
+}
+
+.parrafo {
+    text-decoration: double;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width:600px) {
+
+    .contenedor_principal {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contenedor_hijo:nth-child(1) {
+        /*:nth-child lo que hace es que selecciona una imagen hijo del contenedor padre fotos*/
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+
+    }
+
+    .contenedor_hijo:nth-child(2) {
+        /*:nth-child lo que hace es que selecciona una imagen hijo del contenedor padre fotos*/
+        grid-column-start: span 3;
+        grid-row-start: span 2;
+
+    }
+
+    .contenedor_hijo:nth-child(3) {
+        /*:nth-child lo que hace es que selecciona una imagen hijo del contenedor padre fotos*/
+        grid-column-start: span 3;
+        grid-row-start: span 2;
+
+    }
+
+    .contenedor_hijo:nth-child(4) {
+        /*:nth-child lo que hace es que selecciona una imagen hijo del contenedor padre fotos*/
+        grid-column-start: span 3;
+        grid-row-start: span 2;
+
+    }
+
+
+
+
+}
